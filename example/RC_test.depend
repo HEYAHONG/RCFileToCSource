@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1587001484 source:d:\codeblocks_project\rc_test\main.cpp
+	<iostream>
+	"RC.h"
+
+1587009174 d:\codeblocks_project\rc_test\rc.h
+	"stdint.h"
+	"stdlib.h"
+	"stdio.h"
+
+1587009162 source:d:\codeblocks_project\rc_test\rc.c
+	"RC.h"
+
+1587026730 source:d:\qt_project\rcfiletocsource\example\main.cpp
+	<iostream>
+	"RC.h"
+	"string.h"
+
+1587026941 d:\qt_project\rcfiletocsource\example\rc.h
+	"stdint.h"
+	"stdlib.h"
+	"stdio.h"
+
+1587026488 source:d:\qt_project\rcfiletocsource\example\rc.c
+	"RC.h"
+

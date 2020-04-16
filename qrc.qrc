@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qrc/RC.c</file>
+        <file>qrc/RC.h</file>
+    </qresource>
+</RCC>
