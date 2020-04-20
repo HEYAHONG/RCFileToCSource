@@ -1,6 +1,6 @@
-#include "RC.h"
+ï»¿#include "RC.h"
 
-//×ÊÔ´ĞÅÏ¢½á¹¹Ìå
+//èµ„æºä¿¡æ¯ç»“æ„ä½“
 typedef struct
 {
 size_t data_offset;
@@ -14,7 +14,7 @@ extern const unsigned char RC_Name[];
 extern const RC_Info_t RC_Info[];
 extern const size_t    RC_Info_Size;
 
-//µ±´ı±È½ÏµÄÊı¾İÏàÍ¬Ê±·µ»Ø1
+//å½“å¾…æ¯”è¾ƒçš„æ•°æ®ç›¸åŒæ—¶è¿”å›1
 static unsigned char NameCmp(const char * Name1,const char *Name2)
 {
     unsigned char ret=1;
@@ -30,7 +30,7 @@ static unsigned char NameCmp(const char * Name1,const char *Name2)
     return ret;
 }
 
-//»ñÈ¡Ö¸¶¨Ãû³ÆµÄ×ÊÔ´µÄRC_Info,Ê§°Ü·µ»ØNULL
+//è·å–æŒ‡å®šåç§°çš„èµ„æºçš„RC_Info,å¤±è´¥è¿”å›NULL
 static const RC_Info_t * FindRCInfoByName(const char * Name)
 {
     const RC_Info_t *ret=NULL;
@@ -48,7 +48,7 @@ static const RC_Info_t * FindRCInfoByName(const char * Name)
 }
 
 
-//Í¨¹ıÃû³Æ»ñÈ¡×ÊÔ´´óĞ¡
+//é€šè¿‡åç§°è·å–èµ„æºå¤§å°
 size_t RCGetSize(const char * name)
 {
     size_t ret=0;
@@ -60,7 +60,7 @@ size_t RCGetSize(const char * name)
     return ret;
 }
 
-//Í¨¹ıÃû³Æ»ñÈ¡×ÊÔ´Ö¸Õë
+//é€šè¿‡åç§°è·å–èµ„æºæŒ‡é’ˆ
 const unsigned char * RCGetHandle(const char * name)
 {
     const unsigned char * ret=NULL;

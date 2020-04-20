@@ -1,4 +1,4 @@
-#ifndef __RC_H__
+ï»¿#ifndef __RC_H__
 #define __RC_H__
 #include "stdint.h"
 #include "stdlib.h"
@@ -8,10 +8,10 @@ extern "C"
 {
 #endif
 
-//Í¨¹ıÃû³Æ»ñÈ¡×ÊÔ´´óĞ¡
+//é€šè¿‡åç§°è·å–èµ„æºå¤§å°
 size_t RCGetSize(const char * name);
 
-//Í¨¹ıÃû³Æ»ñÈ¡×ÊÔ´Ö¸Õë
+//é€šè¿‡åç§°è·å–èµ„æºæŒ‡é’ˆ
 const unsigned char * RCGetHandle(const char * name);
 
 #ifdef __cplusplus

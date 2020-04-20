@@ -266,7 +266,7 @@ void MainWindow::on_action_C_triggered()
                         {//写入数据
                             for(int index=0;index<data.length();index++)
                             {
-                                file.write((QString("0X")+QString::number(data[index],16)).toStdString().c_str());
+                                file.write((QString("0X")+QString::number(uint8_t(data[index]),16)).toStdString().c_str());
                                 if(index<data.length()-1)
                                     file.write(",");
                                 if(index==data.length()-1 && _data.length()>0)
@@ -302,7 +302,7 @@ void MainWindow::on_action_C_triggered()
 
                 for(int j=0;j<fileinfo[i].Name.length();j++)
                 {
-                    file.write((QString("0X")+QString::number(fileinfo[i].Name.toStdString()[j],16)).toStdString().c_str());
+                    file.write((QString("0X")+QString::number(uint8_t(fileinfo[i].Name.toStdString()[j]),16)).toStdString().c_str());
                     if(j<fileinfo[i].Name.length()-1)
                         file.write(",");
                 }
